@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>SIPBM</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Core stylesheets -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/pixeladmin.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/widgets.min.css" rel="stylesheet" type="text/css">
+
+  <!-- font awesome -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Theme -->
+  <link href="assets/css/themes/candy-green.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Load jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Pace.js -->
+  <script src="assets/pace/pace.min.js"></script>
+
+  
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="px-nav px-nav-left">
+    <button type="button" class="px-nav-toggle" data-toggle="px-nav">
+      <span class="px-nav-toggle-arrow"></span>
+      <span class="navbar-toggle-icon"></span>
+      <span class="px-nav-toggle-label font-size-11">HIDE MENU</span>
+    </button>
+
+    <ul class="px-nav-content">
+      <li class="px-nav-box p-a-3 b-b-1" id="demo-px-nav-box">
+        <img src="assets/img/user.jpg" alt="" class="pull-xs-left m-r-2 border-round" style="width: 54px; height: 54px;">
+        <div class="font-size-16"><span class="font-weight-light">Welcome, </span><strong>Admin</strong></div>
+      </li>
+
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-dashboard"></i><span class="px-nav-label"> BERANDA</span></a>
+      </li>
+      <li class="px-nav-item">
+          <a href="javascript:void(0)"><i class="px-nav-icon fa fa-database"></i><span class="px-nav-label">DATA DESA</span></a>
+        </li>
+      <li class="px-nav-item active">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-users"></i><span class="px-nav-label">KEPENDUDUKAN</span></a>
+      </li>
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-book"></i><span class="px-nav-label"> CATATAN SIPIL</a>
+
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="javascript:void(0)"><span class="px-nav-label">KEPEMILIKAN AKTA KELAHIRAN</span></a></li>
+          <li class="px-nav-item"><a href="javascript:void(0)"><span class="px-nav-label">KEPEMILIKAN KK</span></a></li>
+        </ul>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-plus-square"></i><span class="px-nav-label">KESEHATAN</span></a>
+      </li>
+      <li class="px-nav-item">
+          <a href="javascript:void(0)"><i class="px-nav-icon fa fa-home"></i><span class="px-nav-label">PERUMAHAN</span></a>
+        </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-graduation-cap"></i><span class="px-nav-label">PENDIDIKAN</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-shower"></i><span class="px-nav-label"> SANITASI</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-lightbulb-o"></i><span class="px-nav-label"> PENERANGAN</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-line-chart"></i><span class="px-nav-label"> EKONOMI</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar px-navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <b>SIPBM</b>
+      </a>
+    </div>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#px-navbar-collapse" aria-expanded="false"><i class="navbar-toggle-icon"></i></button>
+
+    <div class="collapse navbar-collapse" id="px-navbar-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/user.jpg" alt="" class="px-navbar-image">
+            <span class="hidden-md">Admin</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="px-content">
+    <div class="page-header">
+      <h1><i class="px-nav-icon fa fa-users"></i><span class="px-nav-label"></span>KEPENDUDUKAN</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-12">
+        <div class="panel">
+          <div class="panel-title">Form Data Keluarga</div>
+          <small class="panel-subtitle text-muted">Form Pendataan Data Keluarga</small>
+          <div class="panel-body">
+
+            <hr class="panel-wide-block">
+
+            <form class="form-horizontal">
+                <div class="form-group">
+                  <label class="col-md-3 control-label">Desa/Kelurahan</label>
+                  <div class="col-md-9">
+                    <input type="text" class="form-control" placeholder="Masukan Nama Desa/Kelurahan ...">
+                  </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">RW</label>
+                    <div class="col-md-2">
+                      <input type="text" class="form-control" placeholder="Masukan RW ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">No Urut Keluarga</label>
+                    <div class="col-md-2">
+                      <input type="text" class="form-control" placeholder="Masukan No Urut Keluarga ...">
+                    </div>
+                </div>
+
+                <hr class="panel-wide-block">
+
+                <div class="form-group">
+                    <label class="col-md-3 control-label">No Urut</label>
+                    <div class="col-md-2">
+                      <input type="text" class="form-control" placeholder="Masukan No Urut ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Nama</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" placeholder="Masukan Nama ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">NIK</label>
+                    <div class="col-md-9">
+                      <input type="text" class="form-control" placeholder="Masukan NIK ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Hubungan dengan Kepala Keluarga</label>
+                    <div class="col-md-9">
+                      <select name="" id="" class="form-control">
+                        <option value="Kepala Keluarga">Kepala Keluarga</option>
+                        <option value="Isteri">Isteri</option>
+                        <option value="Anak Kandung">Anak Kandung</option>
+                        <option value="Cucu">Cucu</option>
+                        <option value="Anak Tiri">Anak Tiri</option>
+                        <option value="Anak Angkat">Anak Angkat</option>
+                        <option value="Anak Panti">Anak Panti</option>
+                        <option value="Family">Family (Ada hubungan kekerabatan)</option>
+                        <option value="Lainnya">Lainnya (Tidak ada hubungan)</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Jenis Kelamin</label>
+                    <div class="col-md-9">
+                      <select name="" id="" class="form-control">
+                        <option value="Laki-Laki">Laki-Laki</option>
+                        <option value="Perempuan">Perempuan</option>
+                      </select>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Tanggal Lahir</label>
+                    <div class="col-md-9">
+                      <input type="date" class="form-control" placeholder="Masukan Tanggal Lahir ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Tanggal Lahir</label>
+                    <div class="col-md-2">
+                      <input type="date" class="form-control" placeholder="Masukan Tanggal Lahir ...">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Umur</label>
+                    <div class="col-md-2">
+                      <input type="number" class="form-control" placeholder="0">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="col-md-3 control-label">Pendidikan Tertinggi</label>
+                    <div class="col-md-9">
+                      <select name="" id="" class="form-control">
+                        <option value="Belum/Tidak Pernah Sekolah/Tidak Tamat SD">Belum/Tidak Pernah Sekolah/Tidak Tamat SD</option>
+                        <option value="SD/MI">SD/MI</option>
+                        <option value="Paket A">Paket A</option>
+                        <option value="SLTP/MTs">SLTP/MTs</option>
+                        <option value="Paket B">Paket B</option>
+                        <option value="SLTA/MA">SLTA/MA</option>
+                        <option value="Paket C">Paket C</option>
+                        <option value="Diploma">Diploma</option>
+                        <option value="Sarjana">Sarjana</option>
+                        <option value="Magister">Magister</option>
+                        <option value="Doktoral">Doktoral</option>
+                      </select>
+                    </div>
+                </div>
+            </form>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-footer px-footer-bottom">
+    Copyright © 2018 By Fredy Nur Apriyanto. All rights reserved.
+  </footer>
+
+  <!-- ==============================================================================
+  |
+  |  SCRIPTS
+  |
+  =============================================================================== -->
+
+  <!-- Core scripts -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/pixeladmin.min.js"></script>
+
+  <!-- Your scripts -->
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+
+  <title>SIPBM</title>
+
+  <link href="http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,600,700,300&subset=latin" rel="stylesheet" type="text/css">
+  <link href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Core stylesheets -->
+  <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/pixeladmin.min.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/widgets.min.css" rel="stylesheet" type="text/css">
+
+  <!-- font awesome -->
+  <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+
+  <!-- Theme -->
+  <link href="assets/css/themes/candy-green.min.css" rel="stylesheet" type="text/css">
+
+  <!-- Load jQuery -->
+  <script src="assets/js/jquery.min.js"></script>
+
+  <!-- Pace.js -->
+  <script src="assets/pace/pace.min.js"></script>
+
+  <!-- Custom styling -->
+  <style>
+      #metrics > .box-row > .box-cell {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+      }
+  
+      #metrics > .box-row:last-child > .box-cell:last-child {
+        border-bottom-width: 0;
+      }
+  
+      @media (min-width: 768px) {
+        #metrics > .box-row > .box-cell + .box-cell {
+          border-left-width: 1px;
+          border-left-style: solid;
+        }
+  
+        html[dir="rtl"] #metrics > .box-row > .box-cell + .box-cell {
+          border-left: 0;
+          border-right-width: 1px;
+          border-right-style: solid;
+        }
+  
+        #metrics > .box-row:last-child > .box-cell {
+          border-bottom-width: 0;
+        }
+      }
+  </style>
+  <!-- / Custom styling -->
+</head>
+<body>
+  <!-- Nav -->
+  <nav class="px-nav px-nav-left">
+    <button type="button" class="px-nav-toggle" data-toggle="px-nav">
+      <span class="px-nav-toggle-arrow"></span>
+      <span class="navbar-toggle-icon"></span>
+      <span class="px-nav-toggle-label font-size-11">HIDE MENU</span>
+    </button>
+
+    <ul class="px-nav-content">
+      <li class="px-nav-box p-a-3 b-b-1" id="demo-px-nav-box">
+        <img src="assets/img/user.jpg" alt="" class="pull-xs-left m-r-2 border-round" style="width: 54px; height: 54px;">
+        <div class="font-size-16"><span class="font-weight-light">Welcome, </span><strong>Admin</strong></div>
+      </li>
+
+      <li class="px-nav-item active">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-dashboard"></i><span class="px-nav-label"> BERANDA</span></a>
+      </li>
+      <li class="px-nav-item">
+          <a href="javascript:void(0)"><i class="px-nav-icon fa fa-database"></i><span class="px-nav-label">DATA DESA</span></a>
+        </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-users"></i><span class="px-nav-label">KEPENDUDUKAN</span></a>
+      </li>
+      <li class="px-nav-item px-nav-dropdown">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-book"></i><span class="px-nav-label"> CATATAN SIPIL</a>
+
+        <ul class="px-nav-dropdown-menu">
+          <li class="px-nav-item"><a href="javascript:void(0)"><span class="px-nav-label">KEPEMILIKAN AKTA KELAHIRAN</span></a></li>
+          <li class="px-nav-item"><a href="javascript:void(0)"><span class="px-nav-label">KEPEMILIKAN KK</span></a></li>
+        </ul>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-plus-square"></i><span class="px-nav-label">KESEHATAN</span></a>
+      </li>
+      <li class="px-nav-item">
+          <a href="javascript:void(0)"><i class="px-nav-icon fa fa-home"></i><span class="px-nav-label">PERUMAHAN</span></a>
+        </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-graduation-cap"></i><span class="px-nav-label">PENDIDIKAN</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-shower"></i><span class="px-nav-label"> SANITASI</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-lightbulb-o"></i><span class="px-nav-label"> PENERANGAN</span></a>
+      </li>
+      <li class="px-nav-item">
+        <a href="javascript:void(0)"><i class="px-nav-icon fa fa-line-chart"></i><span class="px-nav-label"> EKONOMI</span></a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Navbar -->
+  <nav class="navbar px-navbar">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+        <b>SIPBM</b>
+      </a>
+    </div>
+
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#px-navbar-collapse" aria-expanded="false"><i class="navbar-toggle-icon"></i></button>
+
+    <div class="collapse navbar-collapse" id="px-navbar-collapse">
+
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <img src="assets/img/user.jpg" alt="" class="px-navbar-image">
+            <span class="hidden-md">Admin</span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="pages-profile-v2.html"><span class="label label-warning pull-xs-right"><i class="fa fa-asterisk"></i></span>Profile</a></li>
+            <li class="divider"></li>
+            <li><a href="pages-signin-v1.html"><i class="dropdown-icon fa fa-power-off"></i>&nbsp;&nbsp;Log Out</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="px-content">
+    <div class="page-header">
+      <h1><i class="px-nav-icon ion-home"></i><span class="px-nav-label"></span>BERANDA</h1>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="panel">
+          <div class="panel-title">Rekap Jumlah Penduduk</div>
+          <small class="panel-subtitle text-muted">Berdasarkan Jenjang Usia dan Jenis Kelamin</small>
+          <div class="panel-body">
+
+            <!-- grafik berdasarkan jenjang usia -->
+            <div class="panel-body">
+              <div id="penduduk" style="height: 250px"></div>
+            </div>
+
+            <!-- berdasarkan jenis kelamin -->
+            <div class="box m-y-2">
+              <div class="box-cell p-r-3">
+                Laki-Laki <span class="text-muted">-</span> <strong>51%</strong>
+                <div class="progress m-b-0" style="height: 5px; margin-top: 5px;">
+                  <div class="progress-bar progress-bar-info" style="width: 40%"></div>
+                </div>
+              </div>
+            </div>
+  
+            <hr class="m-a-0">
+  
+            <div class="box m-y-2">
+              <div class="box-cell p-r-3">
+                Perempuan <span class="text-muted">-</span> <strong>49%</strong>
+                <div class="progress m-b-0" style="height: 5px; margin-top: 5px;">
+                  <div class="progress-bar progress-bar-warning" style="width: 25%"></div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+          <div class="panel">
+            <div class="panel-title">Rekaman Sinkronisasi</div>
+            <small class="panel-subtitle text-muted">Histori sinkronisasi terbaru</small>
+            <div class="panel-body">
+              
+                <div class="table-responsive table-success">
+                  <table class="table table-striped valign-middle" style="width:100%;">
+                    <thead>
+                      <th style="width:5%;"></th>
+                      <th style="width:35%;">Mulai Sync</th>
+                      <th style="width:35%;">Selesai Sync</th>
+                      <th style="width:15%;">Durasi</th>
+                    </thead>
+                    <tr>
+                      <td class="text-center" style="width:5%;"><i class="fa fa-check" style="color: #62be67"></i></td>
+                      <td style="width:35%;">2018-12-01 09:50:00</td>
+                      <td style="width:35%;">2018-12-01 10:00:00</td>
+                      <td style="width:15%;">10 menit</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center" style="width:5%;"><i class="fa fa-close" style="color: #f30404"></i></td>
+                      <td style="width:35%;">2018-11-20 09:55:00</td>
+                      <td style="width:35%;">2018-11-20 10:02:00</td>
+                      <td style="width:15%;">7 menit</td>
+                    </tr>
+                    <tr>
+                      <td class="text-center" style="width:5%;"><i class="fa fa-check" style="color: #62be67"></i></td>
+                      <td style="width:35%;">2018-11-12 10:50:00</td>
+                      <td style="width:35%;">2018-11-12 10:57:00</td>
+                      <td style="width:15%;">7 menit</td>
+                    </tr>
+                    
+                  </table>
+                </div>
+  
+            </div>
+          </div>
+        </div>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="px-footer px-footer-bottom">
+    Copyright © 2018 By Fredy Nur Apriyanto. All rights reserved.
+  </footer>
+
+  <!-- ==============================================================================
+  |
+  |  SCRIPTS
+  |
+  =============================================================================== -->
+
+  <!-- Core scripts -->
+  <script src="assets/js/bootstrap.min.js"></script>
+  <script src="assets/js/pixeladmin.min.js"></script>
+
+  <!-- Your scripts -->
+  <script src="assets/js/app.js"></script>
+  <script>
+    $(function() {
+      var data = [
+        { label: 'Bayi', data: 5 },
+        { label: 'Anak-Anak', data: 20 },
+        { label: 'Remaja', data: 25 },
+        { label: 'Dewas', data: 35 },
+        { label: 'Lansia', data: 15 },
+      ];
+
+      $.plot('#penduduk', data, {
+        series: {
+          pie: {
+              show: true,
+          }
+        },
+      });
+    });
+  </script>
+</body>
+</html>
